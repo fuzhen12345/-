@@ -1,0 +1,22 @@
+<view class="dizi">
+  <view class="x">
+    <view class="a">收货人:{{usemessage.userName}}</view>
+    <view class="a">电话:{{usemessage.telNumber}}</view>
+    <view class="c">{{usemessage.provinceName}}{{usemessage.cityName}}{{usemessage.countyName}}{{usemessage.detailInfo}}邮编:{{usemessage.postalCode}}</view>
+  </view>
+  <view class="gai" bindtap="xiu"><image src="/image/icon3.png"></image></view>
+</view>
+<view class="ul">
+  <view class="li" wx:for="{{carts}}" wx:key="index">
+    <image src="{{item.data.imageUrl}}"></image>
+    <view>
+      <view>{{item.data.title}}</view>
+      <view>${{item.data.price}}</view>
+      <view>x{{item.num}}</view>
+    </view>
+  </view>
+</view>
+<view class="bom">
+  <view class="l">合计付款: ${{moeny}}</view>
+  <view class="r" bindtap="btn">去付款</view>
+</view>

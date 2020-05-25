@@ -1,0 +1,23 @@
+<view class="nav">
+  <button wx:if="{{!userInfo.nickName}}" open-type="getUserInfo" bindgetuserinfo="fn">登陆</button>
+    <view wx:else class="my">
+      <view class="le">
+        <view class="myImg">
+            <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="nickName">
+            {{userInfo.nickName}}
+        </view>
+      </view>
+      <view class="ri">关于我们</view>
+    </view>
+</view>
+<view class="prim">
+   <button wx:if="{{!usemessage.userName}}" bindtap="get" type="primary">点击获取地址</button>
+   <view class="dizi" wx:else>
+      <view class="guanli" bindtap="xiu">地址管理</view>
+      <view>{{usemessage.userName}}</view>
+      <view>{{usemessage.telNumber}}</view>
+      <view>{{usemessage.provinceName}}{{usemessage.cityName}}{{usemessage.countyName}}{{usemessage.detailInfo}}邮编:{{usemessage.postalCode}}</view>
+   </view>
+</view>

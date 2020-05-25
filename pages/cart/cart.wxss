@@ -1,0 +1,59 @@
+.item{
+  display: flex;
+  height:240rpx;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.item>.cen{
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 530rpx;
+}
+.item>.cen>.t{
+  font-size: 40rpx;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%)
+}
+.item>.cen>.b{
+  width: 140rpx;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  top: 130rpx;
+  left: 50%;
+  transform: translate(-50%)
+}
+.item .ri {
+  width: 100rpx;
+  font-size: 35rpx;
+}
+.item .ri .rib{
+  margin-top: 80rpx;
+  margin-left: 20rpx;
+}
+.bom{
+  position: fixed;
+  height: 100rpx;
+  bottom: 0rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a9946c;
+  color: #fff;
+}
+.bom .ri{
+  display: flex;
+  width: 200rpx;
+  margin-right: 20rpx;
+  justify-content: space-between;
+}
+.bom .ri image{
+  width: 60rpx;
+  height: 60rpx;
+}

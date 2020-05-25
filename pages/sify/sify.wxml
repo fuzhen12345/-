@@ -1,0 +1,29 @@
+
+<scroll-view scroll-y="true" 
+      scroll-top="{{scrollTop}}" style="400px">
+<view class="left"> 
+  <view wx:for="{{le}}" wx:key="index" 
+  style="color:{{index == currentIndex?'#a9946c':'black'}}" 
+  bindtap="fn" data-item="{{index}}"> {{item.cate}}</view>
+</view>
+
+
+<swiper class="ri" vertical="true" circular="true" current='{{currentIndex}}' bindtouchstart="start" bindtouchend="end">
+  <swiper-item class="items" wx:for="{{le}}" wx:key="index" wx:for-item="it" data-item="index">
+    <navigator class="top" url="/pages/nice/nice?a=guowei">
+      <image src="{{it.banner}}"></image>
+    </navigator>
+    <view class="fg">
+      <view class="fgL"></view>
+      <text>{{it.cate}}</text>
+      <view class="fgr"></view>
+    </view>
+    <view class="ul">
+      <navigator class="li" wx:for="{{it.detail}}" wx:key="index" url="/pages/nice/nice2/nice2?a={{item.id}}">
+        <image src="{{item.thumb}}"></image>
+        <view>{{item.name}}</view>
+      </navigator>
+    </view>
+  </swiper-item>
+</swiper>
+</scroll-view>

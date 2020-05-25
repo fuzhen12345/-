@@ -1,0 +1,71 @@
+page {
+  height: 100%;
+}
+.left {
+  width: 18%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.left view {
+  padding: 20rpx 0;
+}
+.ri {
+  width: 82%;
+  float: left;
+  padding: 26rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.ri .items {
+  width: 100%;
+  height: 100%;
+}
+.ri .items .top {
+  width: 100%;
+  height: 240rpx;
+}
+.ri .items .top image {
+  width: 100%;
+  height: 100%;
+}
+.ri .fg {
+  top: 260rpx;
+  position: absolute;
+  left: 50%;
+  display: flex;
+  transform: translateX(-50%);
+}
+.ri .fg text {
+  margin: 25rpx;
+  color: #a9946c;
+}
+.ri .fg view {
+  margin-top: 19px;
+  width: 80rpx;
+  border-top: 2px solid #a9946c;
+}
+.ri .ul {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ri .ul .li {
+  margin-top: 60rpx;
+  width: 33%;
+  text-align: center;
+  font-size: 30rpx;
+}
+.ri .ul .li image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.ri .ul .li view {
+  margin-top: 15rpx;
+}
+swiper{
+  height: 400px;
+}

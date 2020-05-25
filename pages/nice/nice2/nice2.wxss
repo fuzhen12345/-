@@ -1,0 +1,84 @@
+.top {
+  position: relative;
+  height: 340rpx;
+}
+.top .tu {
+  width: 300rpx;
+  height: 300rpx;
+  position: absolute;
+  left: 50%;
+  top: 30rpx;
+  transform: translateX(-50%);
+}
+.top .gcw {
+  position: absolute;
+  right: 34rpx;
+  font-size: 30rpx;
+}
+.top .gcw image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.top .gcw view {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  left: -3px;
+  text-align: center;
+  line-height: 40rpx;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #a9946c;
+}
+.cen {
+  width: 94%;
+  margin: 0 auto;
+  height: 100rpx;
+  background-color: #a9946c;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-around;
+  font-size: 30rpx;
+}
+.cen view image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.lei {
+  margin-top: 40rpx;
+  text-align: center;
+  padding-bottom: 40rpx;
+  border-bottom: 30rpx solid #eee;
+}
+.lei .l1 {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+.lei .l2 {
+  font-size: 40rpx;
+  margin-top: 20rpx;
+}
+.lei .l3 {
+  font-size: 40rpx;
+  margin-top: 20rpx;
+}
+.bom .nav {
+  display: flex;
+  align-items: center;
+}
+.bom .nav view {
+  flex: 1;
+  padding: 30rpx 0;
+  text-align: center;
+  border-bottom: 2rpx solid #eee;
+}
+.bom .txt {
+  height: 200rpx;
+  box-sizing: border-box;
+  padding: 40rpx;
+}
+.bom .nav .current{
+  border-bottom:1px solid #a9946c;
+}

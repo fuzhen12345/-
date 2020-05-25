@@ -1,0 +1,23 @@
+<view wx:if="{{!arr.length}}">购物车为空</view>
+<view class="item" wx:for="{{arr}}" wx:key="index"> 
+  <checkbox bindtap="btn" data-id="{{item.id}}" checked="{{item.checked}}"></checkbox>
+  <view class="cen">
+    <view class="t">{{item.data.title + item.data.count + item.data.unit}}</view>
+    <view class="b">
+      <view class="a" bindtap="jie" data-id="{{index}}">-</view>
+      <view class="num">{{item.num}}</view>
+      <view class="a" bindtap="add" data-id="{{index}}">+</view>
+    </view>
+  </view>
+  <view class="ri">
+    <view class="ria">${{item.data.price}}</view>
+    <view class="rib" bindtap="del" data-idx="{{index}}">x</view>
+  </view>
+</view>
+<view class="bom" wx:if="{{arr.length}}">
+  <view><checkbox bindtap="quan" checked="{{quan}}"></checkbox>全选</view>
+  <view class="ri">
+      <view>${{price}}</view>
+      <navigator url="/pages/din/din" open-type="navigate"><image src="/image/icon3.png"></image> </navigator>
+  </view>
+</view>

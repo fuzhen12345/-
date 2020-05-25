@@ -1,0 +1,28 @@
+<view class="top">
+    <image src="{{arr[idx].imageUrl}}" class="tu"></image>
+    <navigator url="/pages/cart/cart" class="gcw" open-type="navigate">
+        <view>
+        {{num}}
+        </view>
+        <image src="/image/cart.png"></image>
+    </navigator>
+</view>
+<view class="cen">
+    <text>{{arr[idx].count*numcart + arr[idx].unit}}</text>
+    <text bindtap="add">+</text>
+    <text bindtap="gwc">加入购物车</text>
+    <view bindtap="gwc"><image src="/image/cart-o.png"></image></view>
+</view>
+<view class="lei">
+    <view class="l1">有货</view>
+    <view class="l2">{{arr[idx].title}}</view>
+    <view class="l3">$ {{arr[idx].price}}</view>
+</view>
+<view class="bom">
+    <view class="nav">
+        <view class="sp {{isFlag[0]?'current':''}}" bindtap="fn" data-item="0">商品详情</view> 
+        <view class="cp {{isFlag[1]?'current':''}}" bindtap="fn" data-item="1">产品参数</view> 
+        <view class="sh {{isFlag[2]?'current':''}}" bindtap="fn" data-item="2">售后保障</view> 
+    </view>
+    <view class="txt">{{t}}</view>
+</view>

@@ -1,0 +1,33 @@
+<swiper indicator-dots="true" autoplay="true" circular="true">
+    <swiper-item>
+        <image src="/image/b1.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/image/b2.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+        <image src="/image/b3.jpg" mode="widthFix"></image>
+    </swiper-item>
+</swiper>
+<view class="theme">
+    <view class="thName">精选主题</view>
+    <navigator class="navTop nav1" url="/pages/nice/nice?a=guowei" open-type="navigate">
+        <image src="/image/s1.png"></image>
+    </navigator>
+      <navigator class="navTop nav2" url="/pages/nice/nice?a=dianxin" open-type="navigate">
+        <image src="/image/s2.png"></image>
+    </navigator>
+    <navigator class="navBo" url="/pages/nice/nice?a=chaohuo" open-type="navigate">
+        <image src="/image/s3.png"></image>
+    </navigator>
+</view>
+<view class="newsp">
+    <view class="newName">最近新品</view>
+    <view class="itembox">
+        <navigator wx:for="{{arr}}" wx:key="index" class="item" url="/pages/nice/nice2/nice2?a={{item.id}}" open-type="navigate">
+        <image src="{{item.imageUrl}}"></image>
+        <view>{{item.title+item.count+item.unit}}</view>
+        <view>$ {{item.price}}</view>
+        </navigator>
+    </view>
+</view>

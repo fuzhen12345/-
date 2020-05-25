@@ -1,0 +1,59 @@
+.theme {
+  margin-top: 20rpx;
+  overflow: hidden;
+  height: 800rpx;
+}
+.theme .thName {
+  text-align: center;
+  color: #a9946c;
+  font-size: 40rpx;
+  margin: 10rpx 0;
+}
+.theme .navTop {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  height: 320rpx;
+}
+.theme image {
+  width: 100%;
+  height: 100%;
+}
+.theme .nav1 {
+  padding-right: 2rpx;
+}
+.theme .nav2 {
+  padding-left: 2rpx;
+}
+.theme .navBo {
+  margin-top: 26rpx;
+  width: 100%;
+  height: 400rpx;
+}
+.newsp {
+  margin-top: 50rpx;
+}
+.newsp .newName {
+  text-align: center;
+  color: #a9946c;
+  font-size: 40rpx;
+  margin: 10rpx 0;
+}
+.newsp .itembox {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.newsp .itembox .item {
+  text-align: center;
+  width: 48%;
+  margin-top: 30rpx;
+  background-color: rgba(204, 204, 204);
+}
+.newsp .itembox .item image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 20rpx;
+}

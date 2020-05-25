@@ -1,0 +1,12 @@
+<view class="nav">
+    <image src="{{arr.bannerList}}"></image>
+</view>
+<view class="bom">
+  <navigator class="boms bom1" wx:for="{{arr.shopList}}" wx:key="index" url="/pages/nice/nice2/nice2?a={{item.id}}">
+    <image src="{{item.imageUrl}}"></image>
+    <view class="n">
+      <text>{{item.title + item.count + item.unit}}</text>
+      <view class="money">{{item.price}}</view>
+    </view>
+  </navigator>
+</view>
